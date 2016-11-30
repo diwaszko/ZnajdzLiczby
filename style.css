@@ -1,21 +1,43 @@
 body{
 	color: #262626;
 	background: WhiteSmoke;
-
+	margin: 0px;
+	padding: 0px;
 }
 
 #high1{
+	width: 100%;
+    margin: 0 auto; 
 	text-align:center;
 }
 
 #plansza{
+	width: 610px;
+    margin: auto; 
+	right: 0;
+	left: 0;
 	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
     -khtml-user-select: none; /* Konqueror */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
 }
-
+#container{
+	width: 100%;
+    margin: 0 auto; 
+}
+#main{
+	width: 610px;
+    margin: auto; 
+	right: 0;
+	left: 0;	
+}
+#buttons{
+	text-align:center;
+    margin: auto; 
+	right: 0;
+	left: 0;
+}
 .actionButton{
 	height: 50px;
 	width: 180px;
@@ -26,7 +48,10 @@ body{
 	margin: 20px 10px;
 	cursor:pointer;
 }
-
+#licznik{
+	font-weight: bold;
+	font-size: 30px;
+}
 #losuj{
 	color: #004d00;
 	border: solid green;
