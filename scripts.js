@@ -101,16 +101,16 @@
 				pokaz = document.getElementById("liczba" + nr).setAttribute("onclick",";")
 				}
 			if(((licznik%10) >= 2 && (licznik%10 <= 4)) && ((licznik < 5) || (licznik > 21))){
-				wysLicznik.innerHTML = ("Zosta≥o " + licznik + " monety");
+				wysLicznik.innerHTML = ("Zosta≈Çy " + licznik + " monety");
 			} 
 			else if(licznik == 1){
-				wysLicznik.innerHTML = ("Zosta≥o " + licznik + " moneta");
+				wysLicznik.innerHTML = ("Zosta≈Ça " + licznik + " moneta");
 			}
 			else if(licznik <= 0 ){
-				wysLicznik.innerHTML = ("Straci≥eú wszystkie monety!");
+				wysLicznik.innerHTML = ("Straci≈Çe≈õ wszystkie monety!");
 			}
 			else{
-				wysLicznik.innerHTML = ("Zosta≥o " + licznik + " monet");
+				wysLicznik.innerHTML = ("Zosta≈Ço " + licznik + " monet");
 			}
 		}
 		function koniecGry(odgadniete){	
@@ -138,20 +138,20 @@
 						}
 					}
 					if(odgadniete == 0){
-					alert("Tak ≥atwo siÍ poddajesz? Popatrz jakie to by≥o proste i sprÛbuj jeszcze raz :)");
+					alert("Tak ≈Çatwo siƒô poddajesz? Popatrz jakie to by≈Ço proste i spr√≥buj jeszcze raz :)");
 					}
 					else{
 						if(licznik <= 0 ){
-							alert("Co za pech! Straci≥eú wszystkie monety.");
+							alert("Co za pech! Straci≈Çe≈õ wszystkie monety.");
 						}
 						else{
-							alert("Gratulacje! Zachowa≥eú " + licznik + "/" + licznikStaly + " monet");			
+							alert("Gratulacje! Zachowa≈Çe≈õ " + licznik + "/" + licznikStaly + " monet");			
 						}
 					}
 				}
 		}
 		function potwierdzKoniecGry() {
-			var r = confirm("Czy na pewno chcesz siÍ poddaÊ?");
+			var r = confirm("Czy na pewno chcesz siƒô poddaƒá?");
 			if (r == true) {
 				koniecGry(0);
 			}
