@@ -12,20 +12,25 @@
 
 <meta name="description" content="Znajdz ukryte liczby i zachowaj złoto!" />
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Znajdz ukryte liczby i zachowaj złoto!</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body onload="losuje()">
 	<div  name="container" id="container">
-		<h1 id="high1">Znajdz 5 liczb i postaraj sie zachować jak najwięcej monet
-		</h1>
-		<form>
-			<input type="button" class="actionButton" name="losuj" id="losuj" value="Nowa plansza" onclick="location.reload()" />
-			<input type="button" class="actionButton" name="koniec" id="koniec" value="Koniec gry" onclick="potwierdzKoniecGry()" />
-		</form>
-			<div id="plansza"></div>
-			<div id="licznik"></div>
+		<div name="main" id="main">
+			<h1 id="high1">Odkryj 10 zielonych pól i zachowaj jak najwięcej monet
+			</h1>
+			<div id="buttons">			
+				<input type="button" class="actionButton" name="losuj" id="losuj" value="Nowa plansza" onclick="location.reload()" />
+				<input type="button" class="actionButton" name="koniec" id="koniec" value="Koniec gry" onclick="potwierdzKoniecGry()" />
+				<div id="coins">
+					<img src="coins_small.png" alt="coins" />
+				</div>
+				<div id="licznik"></div>
+			</div>
+		</div>
+		<div id="plansza"></div>
 	</div>
 	
 	<script type="text/javascript" src="scripts.js"></script>

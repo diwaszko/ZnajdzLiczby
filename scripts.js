@@ -3,11 +3,16 @@
 		var tab = [];
 		var tab2 = [];
 		var iloscLiczb = 100;
-		var iloscLiczbDoTrafienia = 15;
-		var licznik = (iloscLiczb-iloscLiczbDoTrafienia);
-		var licznikStaly = (iloscLiczb-iloscLiczbDoTrafienia);
+		var iloscLiczbDoTrafienia = 10;
+		var licznik = ((iloscLiczb/2)-iloscLiczbDoTrafienia);
+		var licznikStaly = ((iloscLiczb/2)-iloscLiczbDoTrafienia);
 		var odgadniete = 0;
-		
+		function limitKeypress(event, value, maxLength) {
+			if (value != undefined && value.toString().length >= maxLength) {
+				event.preventDefault();
+			}
+		}
+		wysLicznik.innerHTML += ("Masz " + licznik + " monet");
 		function losuje(){		
 			for(var i=0; i<iloscLiczb; i++){
 				tab[i] = Math.round(Math.random()*10000);
@@ -66,7 +71,7 @@
 		}
 		function wyswietlLiczby(){
 			for (var w=0; w<iloscLiczb; w++){
-				pokaz.innerHTML += ("<div class='wliczby' class='noselect' onclick='sprawdz(" + w + ")' id='liczba" + w + "'>" + tab[w] + "</div>");
+				pokaz.innerHTML += ("<div class='wliczby' onclick='sprawdz(" + w + ")' id='liczba" + w + "'>" + tab[w] + "</div>");
 				if((w+1)%10 == 0){
 					pokaz.innerHTML += ("<div style='clear:both;'></div>");
 				}
@@ -100,6 +105,10 @@
 				licznik -= 1;
 				pokaz = document.getElementById("liczba" + nr).setAttribute("onclick",";")
 				}
+				
+			if(licznik == 0){
+				koniecGry(licznik);
+			}
 			if(((licznik%10) >= 2 && (licznik%10 <= 4)) && ((licznik < 5) || (licznik > 21))){
 <<<<<<< HEAD
 				wysLicznik.innerHTML = ("Zostało " + licznik + " monety");
@@ -121,7 +130,7 @@
 			}
 		}
 		function koniecGry(odgadniete){	
-				if(odgadniete == iloscLiczbDoTrafienia || odgadniete == 0){
+		if(odgadniete == iloscLiczbDoTrafienia || odgadniete == -10 || licznik == 0){
 					for (var x = 0; x < iloscLiczb; x++){
 						if(tab2[x] == 0){
 							pokaz = document.getElementById("liczba" + x).innerHTML = ("&#10004;");
@@ -144,11 +153,11 @@
 							pokaz = document.getElementById("liczba" + x).setAttribute("onclick",";")
 						}
 					}
-					if(odgadniete == 0){
+					if(odgadniete == -10){
 					alert("Tak łatwo się poddajesz? Popatrz jakie to było proste i spróbuj jeszcze raz :)");
 					}
-					else{
-						if(licznik <= 0 ){
+					else{				
+						if(licznik == 0 ){
 							alert("Co za pech! Straciłeś wszystkie monety.");
 						}
 						else{
@@ -160,9 +169,10 @@
 		function potwierdzKoniecGry() {
 			var r = confirm("Czy na pewno chcesz się poddać?");
 			if (r == true) {
-				koniecGry(0);
+				koniecGry(-10);
 			}
 		}
+
 		
 /*				
 				var maxy = tab[0];
