@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!--
+- zgadywanie 5 wylosowanych liczb z zakresu od 1 do 100
+- przyjecie 5 kolorow w zaleznosci od odleglosci do nastepnej poprawnej liczby (ciemny czerwony (5<), czerwony(4), jasny czerwony(3), pomaranczowy(2), zolty (1), zielony (trafiony))
+- licznik ile strzalow zostalo oddanych zanim sie odgadlo / jakas grafika np sztabki lub kupka zlota, ktora ubywa z kazdym nietrafionym strzalem
+- 100 monet na poczatku (kazde pudlo to -1 moneta)
+- mozliwosc wykupienia podpowiedzi, ktora losuje z zakresu 2 do 4 podpowiedz - koszt 3? monety
+-->
+
+<meta name="description" content="Znajdz ukryte liczby i zachowaj złoto!" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Znajdz ukryte liczby i zachowaj złoto!</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body onload="losuje()">
+<h4>Znajdz 5 liczb i postaraj sie zachować jak najwięcej monet</h4>
+<form>
+<input type="button" name="losuj" id="losuj" value="Nowa plansza" onclick="location.reload()" />
+<input type="button" name="koniec" id="koniec" value="Koniec gry" onclick="potwierdzKoniecGry()" />
+</form>
+
+<p id="plansza"></p>
+<p id="licznikk"></p>
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
