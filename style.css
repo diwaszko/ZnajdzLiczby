@@ -1,0 +1,65 @@
+body{
+	color: #262626;
+	background: WhiteSmoke;
+
+}
+#plansza{
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.wliczby{
+	font-size: 20px;
+	font-weight: bold;
+	height: 40px;
+	width: 35px;
+	border: #262626 solid 3px;
+	border-radius: 15px;
+	padding: 5px;
+	margin: 5px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	cursor:pointer;
+    -webkit-transition: 1s; 
+	-moz-transform:1s; 
+  
+	/* Internet Explorer 10 */
+	display:-ms-flexbox;
+	-ms-flex-pack:center;
+	-ms-flex-align:center;
+
+	/* Firefox */
+	display:-moz-box;
+	-moz-box-pack:center;
+	-moz-box-align:center;
+
+	/* Safari, Opera, and Chrome */
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+
+	/* W3C */
+	display:box;
+	box-pack:center;
+	box-align:center;
+}
+
+.wliczby:hover{
+	border: black solid 3px;
+	background: lightgrey;
+	color: black;
+	-moz-transform:rotateY(360deg);
+
+}
+.wliczby:not(:focus):hover {
+	-moz-transform:rotateY(0deg);
+	-moz-transition-timing-function: ease-in-out;
+}
+.wliczby:focus {
+	-moz-transform:rotateY(360deg);
+}
+
+
