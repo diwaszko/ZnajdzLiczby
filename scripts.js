@@ -101,10 +101,17 @@
 				pokaz = document.getElementById("liczba" + nr).setAttribute("onclick",";")
 				}
 			if(((licznik%10) >= 2 && (licznik%10 <= 4)) && ((licznik < 5) || (licznik > 21))){
+<<<<<<< HEAD
 				wysLicznik.innerHTML = ("Zostało " + licznik + " monety");
 			} 
 			else if(licznik == 1){
 				wysLicznik.innerHTML = ("Zostało " + licznik + " moneta");
+=======
+				wysLicznik.innerHTML = ("Zostały " + licznik + " monety");
+			} 
+			else if(licznik == 1){
+				wysLicznik.innerHTML = ("Została " + licznik + " moneta");
+>>>>>>> origin/ZnajdzLiczbe
 			}
 			else if(licznik <= 0 ){
 				wysLicznik.innerHTML = ("Straciłeś wszystkie monety!");
