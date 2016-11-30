@@ -1,5 +1,5 @@
 		var pokaz = document.getElementById("plansza");
-		var wysLicznik = document.getElementById("licznikk");
+		var wysLicznik = document.getElementById("licznik");
 		var tab = [];
 		var tab2 = [];
 		var iloscLiczb = 100;

@@ -3,12 +3,65 @@ body{
 	background: WhiteSmoke;
 
 }
+
+#high1{
+	text-align:center;
+}
+
 #plansza{
 	-webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Chrome/Safari/Opera */
     -khtml-user-select: none; /* Konqueror */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.actionButton{
+	height: 50px;
+	width: 180px;
+	color: black;
+    font-weight: bold;
+	font-size: 20px;
+	border-radius: 15px;
+	margin: 20px 10px;
+	cursor:pointer;
+}
+
+#losuj{
+	color: #004d00;
+	border: solid green;
+	border-width: 0px 0px 2px 2px;
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d2ff52+0,4ccc3b+100 */
+	background: #d2ff52; /* Old browsers */
+	background: -moz-linear-gradient(top, #d2ff52 0%, #4ccc3b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #d2ff52 0%,#4ccc3b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #d2ff52 0%,#4ccc3b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#4ccc3b',GradientType=0 ); /* IE6-9 */
+}
+#losuj:hover{
+	color: #e6ffe6;
+	background: #4ccc3b;
+	border: solid lightgreen;
+	border-width: 0px 0px 2px 2px;
+}
+#koniec{
+	color: #4d0000;
+	border: solid darkred;
+	border-width: 0px 2px 2px 0px;
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f49e69+0,ea0000+100 */
+	background: #f49e69; /* Old browsers */
+	background: -moz-linear-gradient(top, #f49e69 0%, #ea0000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f49e69 0%,#ea0000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f49e69 0%,#ea0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f49e69', endColorstr='#ea0000',GradientType=0 ); /* IE6-9 */
+}
+#koniec:hover{
+	color: #ffe6e6;	
+	background: #ea0000;
+	border: solid #ff8080;
+	border-width: 0px 2px 2px 0px;
 }
 .wliczby{
 	font-size: 20px;
