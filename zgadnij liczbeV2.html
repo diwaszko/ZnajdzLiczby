@@ -17,15 +17,17 @@
   <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body onload="losuje()">
-<h4>Znajdz 5 liczb i postaraj sie zachować jak najwięcej monet</h4>
-<form>
-<input type="button" name="losuj" id="losuj" value="Nowa plansza" onclick="location.reload()" />
-<input type="button" name="koniec" id="koniec" value="Koniec gry" onclick="potwierdzKoniecGry()" />
-</form>
-<div  name="container" id="container"></div>
-<div id="plansza"></div>
-<div id="licznikk">666</div>
-
-<script type="text/javascript" src="scripts.js"></script>
+	<div  name="container" id="container">
+		<h1 id="high1">Znajdz 5 liczb i postaraj sie zachować jak najwięcej monet
+		</h1>
+		<form>
+			<input type="button" class="actionButton" name="losuj" id="losuj" value="Nowa plansza" onclick="location.reload()" />
+			<input type="button" class="actionButton" name="koniec" id="koniec" value="Koniec gry" onclick="potwierdzKoniecGry()" />
+		</form>
+			<div id="plansza"></div>
+			<div id="licznik"></div>
+	</div>
+	
+	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
