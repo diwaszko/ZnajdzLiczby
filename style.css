@@ -46,9 +46,120 @@ body{
 	margin: 20px 10px;
 	cursor:pointer;
 }
-#licznik{
+.actionButton:hover{
+	transform: 1s;
+    transition: 1s; 
+	transition-timing-function: ease-in-out;
+}
+.actionButton:focus{
+	outline:0;
+}
+#info{
+	width:610px;
+	min-height: 150px;
+	margin: auto auto 15px auto; 
+}
+#legendatxt{
+	margin-left: 5px;
+}
+#legenda{
+	float:left;
+	height:80px;
+	width:65%;
+}
+#legendabuttons{
+	width:100%;
+	margin: auto;
+	float: left;	
+}
+.key:hover{
+	color: #4d4d4d !important;
+	border: solid #4d4d4d 3px !important;
+	
+}
+.key:focus{
+	color:black !important;
+	border: solid black 3px !important;
+	outline:0;
+	cursor:default;
+}
+.key{
+	font-size: 20px;
 	font-weight: bold;
-	font-size: 30px;
+	height: 55px;
+	width: 50px;
+	border: #262626 solid 3px;
+	border-radius: 15px;
+	padding: 5px;
+	margin: 5px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	cursor:pointer;
+	transform: 1s;
+    transition: 1s; 	
+}
+#key0{
+	border-color: #808080; 
+	background: lightgrey; 
+	color: #808080;
+	font-size: 1.5rem;
+	margin-right: 10%;
+}
+#key1{
+	border-color: #00cc00; 
+	background: lightgreen; 
+	color: #00cc00;
+}
+#key2{
+	border-color: #cccc00; 
+	background: #ffff80; 
+	font-size: 30px; 
+	color: #cccc00;
+}
+#key3{
+	border-color: #cc7a00;
+	background: #ffd280; 
+	font-size: 30px; 
+	color: #cc7a00;
+}
+
+#key4{
+	border-color: #cc0000; 
+	background: #ff8080; 
+	color: #cc0000;
+}
+#key5{
+	border-color: #808080; 
+	background: lightgrey; 
+	color: #808080;
+	font-size: 1.5rem;
+	margin-left: 10%;
+}
+#opis{
+	margin-left:5px;
+	text-align: justify;
+}
+#coins{
+	width:35%;
+	margin: auto;
+	float:left;	
+}
+#coinsimg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#licznik{
+	text-align:center;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+#wskaznikzielonych{
+	text-align:center;
+	font-weight: bold;
+	color: darkgreen;
+	font-size: 1rem;
 }
 #losuj{
 	color: #004d00;
@@ -127,8 +238,6 @@ body{
 	border: black solid 3px;
 	background: lightgrey;
 	color: black;
-	-moz-transform:rotateY(360deg);
-
 }
 .wliczby:not(:focus):hover {
 	-moz-transform:rotateY(0deg);
@@ -137,7 +246,15 @@ body{
 .wliczby:focus {
 	-moz-transform:rotateY(360deg);
 }
-#invisible{
+#footer{
 	height: 50px;
+	margin-top: 10px;
+	padding-top: 20px;
+	text-align: center;
+	background: #e6e6e6;
+	width: 610px;
+    margin: auto; 
+	right: 0;
+	left: 0;	
 }
 
