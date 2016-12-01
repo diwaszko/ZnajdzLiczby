@@ -32,6 +32,7 @@
 		}
 		
 		wysLicznik.innerHTML += ("Masz " + licznik + " monet");
+		wskZielonych.innerHTML = ("Znajdz " + licznikZielonych + " zielonych!");
 		function losuje(){		
 			for(var i=0; i<iloscLiczb; i++){
 				tab[i] = Math.round(Math.random()*10000);
