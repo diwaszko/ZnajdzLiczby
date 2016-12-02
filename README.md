@@ -1,3 +1,2 @@
 # ZnajdzLiczby
-Wczesna wersja gry Znajdz Liczby
-tralalala
+Moja pierwsza gra logiczna przy wykorzystaniu języka Javascript
