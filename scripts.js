@@ -14,7 +14,7 @@
 		function legenda(x){
 			switch(x){
 				case 0:
-					opisGry.innerHTML = ("Odkryj wszystkie zielone pola, aby wygrać.<br />Każde odkrycie nie zielonego pola kosztuje 1 monetę.<br />Kliknij na pole z legendy, aby dowiedzieć się więcej.");
+					opisGry.innerHTML = ("Odkryj wszystkie zielone pola, aby wygrać. Każde odkrycie nie zielonego pola kosztuje 1 monetę.<br />Kliknij na pole z legendy, aby dowiedzieć się więcej.");
 					break;
 				case 1:
 					opisGry.innerHTML = ("Zielone pola otoczone są w pionie i poziomie (nie w narożnikach!) polami z numerami 1 i 2.<br />Zielone pola mogą także występować obok siebie.");
@@ -32,6 +32,7 @@
 		}
 		
 		wysLicznik.innerHTML += ("Masz " + licznik + " monet");
+		wskZielonych.innerHTML = ("Znajdz " + licznikZielonych + " zielonych!");
 		function losuje(){		
 			for(var i=0; i<iloscLiczb; i++){
 				tab[i] = Math.round(Math.random()*10000);
@@ -130,17 +131,10 @@
 				koniecGry(licznik);
 			}
 			if(((licznik%10) >= 2 && (licznik%10 <= 4)) && ((licznik < 5) || (licznik > 21))){
-<<<<<<< HEAD
-				wysLicznik.innerHTML = ("Zostało " + licznik + " monety");
-			} 
-			else if(licznik == 1){
-				wysLicznik.innerHTML = ("Zostało " + licznik + " moneta");
-=======
 				wysLicznik.innerHTML = ("Zostały " + licznik + " monety");
 			} 
 			else if(licznik == 1){
 				wysLicznik.innerHTML = ("Została " + licznik + " moneta");
->>>>>>> origin/ZnajdzLiczbe
 			}
 			else if(licznik <= 0 ){
 				wysLicznik.innerHTML = ("Straciłeś wszystkie monety!");

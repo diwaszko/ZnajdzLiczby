@@ -1,6 +1,7 @@
 body{
 	color: #262626;
 	background: WhiteSmoke;
+	width:100%;
 }
 
 #high1{
@@ -247,9 +248,9 @@ body{
 	-moz-transform:rotateY(360deg);
 }
 #footer{
-	height: 50px;
+	height: 30px;
 	margin-top: 10px;
-	padding-top: 20px;
+	padding-top: 15px;
 	text-align: center;
 	background: #e6e6e6;
 	width: 610px;
