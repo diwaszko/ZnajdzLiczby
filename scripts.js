@@ -4,8 +4,9 @@
 		var wskZielonych = document.getElementById("wskaznikzielonych"); 
 		var tab = [];
 		var tab2 = [];
+		var tab3 = [];	//usunac!!!!!!!!!!!!!
 		var iloscLiczb = 100;
-		var iloscLiczbDoTrafienia = 10;
+		var iloscLiczbDoTrafienia = 10;	//ma byc 10!!!!!!!!!
 		var licznik = ((iloscLiczb/2)-iloscLiczbDoTrafienia);
 		var licznikStaly = ((iloscLiczb/2)-iloscLiczbDoTrafienia);
 		var licznikZielonych = iloscLiczbDoTrafienia;
@@ -46,7 +47,13 @@
 				var maxy = Math.max.apply(Math,tab);
 				tab[maxIndex] = 0;
 			}
-			ulozLiczby();
+/*			tab = [1,1,1,1,1,1,1,1,1,1,			// tablica do testów
+				   1,1,1,1,1,1,1,1,1,0,
+				   1,1,1,1,1,1,1,0,1,0,
+				   1,1,1,1,1,1,1,1,1,1,
+				   0,1,1,1,1,1,1,1,1,1,
+				   0,1,1,1,1,1,1,1,1,1];
+*/			ulozLiczby();
 		}
 		function ulozLiczby(){					// przyjmuje wartosci dla max liczb w nowej tab2 = 0, a dla reszty = u
 		for (var u=0; u<iloscLiczb; u++){
@@ -55,6 +62,7 @@
 			}
 			else{
 			tab2[u] = u+1;
+			tab3[u]	= u+1;	//usunac!!!!!!!!
 			}
 			tab[u] = u+1;						// zwalnia miejsce z tab i przypisuje w ich miejsce liczby od 1 do "iloscLiczbDoTrafienia"
 		}
@@ -62,16 +70,16 @@
 		}
 		function obok(){
 			for (o=0; o<iloscLiczb; o++){
-				if(((tab2[o] == 0) && (tab2[o-1] > 0) && ((tab2[o-1])%10 != 0)) || ((tab2[o] == 0) && (tab2[o-1] < -1)) && ((tab2[o-1])%10 != 0)){
+				if(((tab2[o] == 0) && (tab2[o-1] > 0) && ((tab2[o-1])%10 != 0)) || ((tab2[o-1] == -2) && (tab2[o] == 0) && ((o)%10 != 0))){
 					tab2[o-1] = -1;
 				}
-				if(((tab2[o] == 0) && (tab2[o+1] > 0) && ((tab2[o+1]-1)%10 != 0)) || ((tab2[o] == 0) && (tab2[o+1] < -1)) && ((tab2[o+1]-1)%10 != 0)){
+				if(((tab2[o] == 0) && (tab2[o+1] > 0) && ((tab2[o+1]-1)%10 != 0)) || ((tab2[o+1] == -2) && (tab2[o] == 0) && ((o+1)%10 != 0))){
 					tab2[o+1] = -1;
 				}
-				if((tab2[o] == 0) && (tab2[o-2] > 0) && (tab2[o-1] != 0) && (tab2[o-2] != 0) && (tab2[o-2] != -1) && (tab2[o-2] != -2) && ((tab2[o-2])%10 != 0) && ((tab2[o-1])%10 != 0)){
+				if((tab2[o] == 0) && (tab2[o-2] > 0) && (tab2[o-1] != 0) && (tab2[o-2] != -1) && (tab2[o-2] != -2) && ((tab2[o-2]+1)%10 != 0) && ((tab2[o-2])%10 != 0) && ((tab2[o-1])%10 != 0)){
 					tab2[o-2] = -2;
 				}
-				if((tab2[o] == 0) && (tab2[o+2] > 0) && (tab2[o+1] != 0) && (tab2[o+2] != 0) && (tab2[o+2] != -1) && (tab2[o+2] != -2) && ((tab2[o+2]-1)%10 != 0) && ((tab2[o+1]-1)%10 != 0)){
+				if((tab2[o] == 0) && (tab2[o+2] > 0) && (tab2[o+1] != 0) && (tab2[o+2] != -1) && (tab2[o+2] != -2) && ((tab2[o+2]-2)%10 != 0) && ((tab2[o+2]-1)%10 != 0) && ((tab2[o+1]-1)%10 != 0)){
 					tab2[o+2] = -2;
 				}
 				if(((tab2[o] == 0)  && (tab2[o-10] > 0)) || ((tab2[o] == 0) && (tab2[o-10] == -2))){
@@ -80,10 +88,10 @@
 				if(((tab2[o] == 0)  && (tab2[o+10] > 0)) || ((tab2[o] == 0) && (tab2[o+10] == -2))){
 					tab2[o+10] = -1;
 				}
-				if((tab2[o] == 0) && (tab2[o-20] > 0)){ 
+				if((tab2[o] == 0) && (tab2[o-20] > 0) && (tab2[o-20] != -1) && (tab2[o-20] != -2)){ 
 					tab2[o-20] = -2;
 				}
-				if((tab2[o] == 0) && (tab2[o+20] > 0)){
+				if((tab2[o] == 0) && (tab2[o+20] > 0) && (tab2[o+20] != -1) && (tab2[o+20] != -2)){
 					tab2[o+20] = -2;
 				}		
 			}
