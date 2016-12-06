@@ -48,7 +48,6 @@ body{
 	cursor:pointer;
 }
 .actionButton:hover{
-	transform: 1s;
     transition: 1s; 
 	transition-timing-function: ease-in-out;
 }
@@ -97,7 +96,6 @@ body{
 	text-align: center;
 	vertical-align: middle;
 	cursor:pointer;
-	transform: 1s;
     transition: 1s; 	
 }
 #key0{
@@ -172,7 +170,6 @@ body{
 	background: -moz-linear-gradient(top, #d2ff52 0%, #4ccc3b 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #d2ff52 0%,#4ccc3b 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #d2ff52 0%,#4ccc3b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#4ccc3b',GradientType=0 ); /* IE6-9 */
 }
 #losuj:hover{
 	color: #e6ffe6;
@@ -190,7 +187,6 @@ body{
 	background: -moz-linear-gradient(top, #f49e69 0%, #ea0000 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #f49e69 0%,#ea0000 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #f49e69 0%,#ea0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f49e69', endColorstr='#ea0000',GradientType=0 ); /* IE6-9 */
 }
 #koniec:hover{
 	color: #ffe6e6;	
@@ -228,11 +224,6 @@ body{
 	display:-webkit-box;
 	-webkit-box-pack:center;
 	-webkit-box-align:center;
-
-	/* W3C */
-	display:box;
-	box-pack:center;
-	box-align:center;
 }
 
 .wliczby:hover{
