@@ -1,5 +1,5 @@
-# ZnajdzUkryteLiczby
-Moja pierwsza gra logiczna przy wykorzystaniu języka Javascript
+# Znajdz Ukryte Liczby
+Gra logiczna przy wykorzystaniu języka Javascript
 
 ZASADY:
 
