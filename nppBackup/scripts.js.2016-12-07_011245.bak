@@ -68,6 +68,7 @@ for (var u=0; u<iloscLiczb; u++){
 }
 obok();
 }
+function obok(){						// warunki w jakich dany kolor(czerwony, pomaranczowy i zolty) zostaja przypisane wzgledem wylosowanego zielonego pola
 	for (o=0; o<iloscLiczb; o++){
 		if(((tab2[o] == 0) && (tab2[o-1] > 0) && ((tab2[o-1])%10 != 0)) || ((tab2[o-1] == -2) && (tab2[o] == 0) && ((o)%10 != 0))){
 			tab2[o-1] = -1;
@@ -96,6 +97,7 @@ obok();
 	}
 			wyswietlLiczby();
 }
+function wyswietlLiczby(){					// wyswietla liczby na ekranie dodajac divy z funkcja on click i id (po wykonaniu petli 10x rozpoczyna ukladanie divow w nowej linii)
 	for (var w=0; w<iloscLiczb; w++){
 		pokaz.innerHTML += ("<div class='wliczby' onclick='sprawdz(" + w + ")' id='liczba" + w + "'>" + tab[w] + "</div>");
 		if((w+1)%10 == 0){
@@ -103,10 +105,12 @@ obok();
 		}
 	}
 }
+function sprawdz(nr){						// sprawdza wybrane przez gracza pole i podmienia jego wewnetrzny kod html na odpowiedni kolor
 	if(tab2[nr] == 0){
 		pokaz = document.getElementById("liczba" + nr).innerHTML = ("&#10004;");
 		pokaz = document.getElementById("liczba" + nr).style = ("border-color: #00cc00; background: lightgreen; cursor: default; color: #00cc00; transform:rotateY(360deg); -webkit-transform:rotateY(360deg); -moz-transition-duration: 2s; -moz-transform:rotateY(720deg);");		
 		pokaz = document.getElementById("liczba" + nr).setAttribute("onclick",";")
+		odgadniete++;						//zlicza odgadniete liczby
 		wskaznikZielonych();
 		if(odgadniete == iloscLiczbDoTrafienia){
 			koniecGry(odgadniete);
@@ -131,6 +135,7 @@ obok();
 		pokaz = document.getElementById("liczba" + nr).setAttribute("onclick",";")
 		}
 		
+	if(licznik == 0){			// wskaznik wyswietlajacy pozostalą ilosc monet
 		koniecGry(licznik);
 	}
 	if(((licznik%10) >= 2 && (licznik%10 <= 4)) && ((licznik < 5) || (licznik > 21))){
@@ -146,7 +151,10 @@ obok();
 		wysLicznik.innerHTML = ("Zostało " + licznik + " monet");
 	}
 }
+function koniecGry(odgadniete){				
+	if(odgadniete == iloscLiczbDoTrafienia || odgadniete == -10 || licznik == 0){		
 		for (var x = 0; x < iloscLiczb; x++){
+				if(tab2[x] == 0){						// w przypadku zakonczenia gry odkrywa wszystkie pola na planszy
 					pokaz = document.getElementById("liczba" + x).innerHTML = ("&#10004;");
 					pokaz = document.getElementById("liczba" + x).style = ("border-color: #00cc00; background: lightgreen; cursor: default; color: #00cc00; transform:rotateY(3600deg); -webkit-transform:rotateY(3600deg); transition-duration: 10s; -moz-transform:rotateY(3600deg);");		
 					pokaz = document.getElementById("liczba" + x).setAttribute("onclick",";");
@@ -167,6 +175,7 @@ obok();
 					pokaz = document.getElementById("liczba" + x).setAttribute("onclick",";");
 				}
 		}
+		if(odgadniete == -10){							// komunikaty w przypadku poddania sie lub przegranej
 			alert("Tak łatwo się poddajesz? Popatrz jakie to było proste i spróbuj jeszcze raz :)");
 			}
 			else{				
@@ -179,6 +188,7 @@ obok();
 			}
 		}
 }
+function wskaznikZielonych(odgadniete){					// wkaznik wyswietlajacy pozostala ilosc zielonych pol do odnalezienia
 	licznikZielonych--;
 	if(licznikZielonych == 0){
 		wskZielonych.innerHTML = ("Brawo!");
@@ -193,6 +203,7 @@ obok();
 		wskZielonych.innerHTML = ("Jeszcze " + licznikZielonych + " zielonych!");
 	}
 }
+function potwierdzKoniecGry() {
 	var r = confirm("Czy na pewno chcesz się poddać?");
 	if (r == true) {
 		koniecGry(-10);
