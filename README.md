@@ -21,7 +21,7 @@ Układ w jakim występują zielone pola oraz oblegające je pozostałe pola:
        3 3 2 3 3
            3
            
-0 - zielone pole
-1 - żółte pola
-2 - pomarańczowe pola
+0 - zielone pole,
+1 - żółte pola,
+2 - pomarańczowe pola,
 3 - czerwone pola
