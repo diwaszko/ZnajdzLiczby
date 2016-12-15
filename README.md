@@ -17,8 +17,3 @@ Układ w jakim występują zielone pola oraz oblegające je pozostałe pola:
 
 ![ulozenie-kolorow](https://cloud.githubusercontent.com/assets/22865870/21220541/a235bb12-c2b9-11e6-8fa0-6cd069e91169.png)
 
-0 - zielone pole,
-1 - żółte pola,
-2 - pomarańczowe pola,
-3 - czerwone pola
-
