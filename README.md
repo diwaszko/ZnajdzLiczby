@@ -17,3 +17,7 @@ Układ w jakim występują zielone pola oraz oblegające je pozostałe pola:
 
 ![ulozenie-kolorow](https://cloud.githubusercontent.com/assets/22865870/21220541/a235bb12-c2b9-11e6-8fa0-6cd069e91169.png)
 
+
+Przykładowe możliwe ułożenie zielonych pól oraz oblegające je pozostałe pola:
+
+![uklad z kilkoma zielonymi](https://cloud.githubusercontent.com/assets/22865870/21220715/822d136e-c2ba-11e6-807d-79a3cec1cf42.png)
