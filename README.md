@@ -14,18 +14,11 @@ ZASADY:
 3. Grę rozpoczyna się mając 40 monet, a każde odkrycie innego niż zielonego pola kosztuje 1 monete
 
 Układ w jakim występują zielone pola oraz oblegające je pozostałe pola:
- 
-           3
-       3 3 2 3 3
-       3 3 1 3 3
-     3 2 1 0 1 2 3
-       3 3 1 3 3
-       3 3 2 3 3
-           3
-           
+
+![ulozenie-kolorow](https://cloud.githubusercontent.com/assets/22865870/21220541/a235bb12-c2b9-11e6-8fa0-6cd069e91169.png)
+
 0 - zielone pole,
 1 - żółte pola,
 2 - pomarańczowe pola,
 3 - czerwone pola
 
-![ulozenie-kolorow](https://cloud.githubusercontent.com/assets/22865870/21220541/a235bb12-c2b9-11e6-8fa0-6cd069e91169.png)
