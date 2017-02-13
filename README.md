@@ -1,8 +1,12 @@
 # Znajdz Ukryte Liczby
 
-<u>NAJLEPIEJ DZIAŁA POD GOOGLE CHROME i OPERA</u>
+```diff
++ <u>NAJLEPIEJ DZIAŁA POD GOOGLE CHROME i OPERA</u>
+```
 
-<b>NIE OBSŁUGUJE INTERNET EXPLORERA</b>
+```diff
+- <b>![#f03c15]NIE OBSŁUGUJE INTERNET EXPLORERA</b>
+```
 <br />
 <br />
 <br />
