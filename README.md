@@ -8,8 +8,6 @@
 - NIE OBSŁUGUJE INTERNET EXPLORERA
 ```
 <br />
-<br />
-<br />
 Gra logiczna przy wykorzystaniu języka Javascript
 
 link: https://diwaszko.github.io/ZnajdzLiczby/
