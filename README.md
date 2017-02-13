@@ -1,4 +1,11 @@
 # Znajdz Ukryte Liczby
+
+<u>NAJLEPIEJ DZIAŁA POD GOOGLE CHROME i OPERA</u>
+
+<b>NIE OBSŁUGUJE INTERNET EXPLORERA</b>
+<br />
+<br />
+<br />
 Gra logiczna przy wykorzystaniu języka Javascript
 
 link: https://diwaszko.github.io/ZnajdzLiczby/
