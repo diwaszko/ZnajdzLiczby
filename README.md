@@ -1,11 +1,11 @@
 # Znajdz Ukryte Liczby
 
 ```diff
-+ <u>NAJLEPIEJ DZIAŁA POD GOOGLE CHROME i OPERA</u>
++ NAJLEPIEJ DZIAŁA POD GOOGLE CHROME i OPERA
 ```
 
 ```diff
-- <b>![#f03c15]NIE OBSŁUGUJE INTERNET EXPLORERA</b>
+- NIE OBSŁUGUJE INTERNET EXPLORERA
 ```
 <br />
 <br />
