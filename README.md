@@ -10,7 +10,7 @@
 <br />
 Gra logiczna przy wykorzystaniu języka Javascript
 
-link: https://diwaszko.github.io/ZnajdzLiczby/
+<b>link do gry: https://diwaszko.github.io/ZnajdzLiczby/</b>
 
 ZASADY:
 
